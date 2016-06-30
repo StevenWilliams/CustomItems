@@ -1,0 +1,19 @@
+name: ${project.name}
+version: ${project.version}
+main: ${project.groupId}.${project.artifactId}.${project.name}
+depend: [Vault, ItemNBTAPI, ActionBarAPI]
+description: |
+    ${project.description}
+commands:
+  cigive:
+    description: Give item with specified damage
+    usage: /<command> <material> <damage> (player)
+    permission: customitem.give
+  ciitem:
+    description: Give defined custom item
+    usage: /<command> <customitem> <player> (amount)
+    permission: customitem.item
+  cirepair:
+    description: Repair custom item in hand
+    usage: /<command>
+    permission: customitem.repair

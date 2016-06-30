@@ -1,0 +1,31 @@
+#Item names: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html (use CAPS)
+Items:
+  RED_SWORD:
+    base: WOOD_SWORD
+    durability-value: 1 # (2/max vanilla uses in texture pack) - 1562
+    display-name: '&cRed Sword'
+    uses: 2000 #Since it's a custom durability counter you're able to have above vanilla uses
+    use-default-action: true
+    use-durability: true
+    repair:
+      250:
+        money: 100
+        xp: 500
+        items:
+          BEDROCK: 10
+          STICK: 3
+      500:
+        money: 200
+        xp: 600
+        items:
+          BEDROCK: 11
+          STICK: 3
+  GREY_SWORD:
+    base: WOOD_SWORD
+    durability-value: 2 # (2/max vanilla uses in texture pack) - 1562
+    display-name: '&7Grey Sword'
+    uses: 20 #Since it's a custom durability counter you're able to have above vanilla uses
+    use-default-action: true
+    use-durability: true
+    drops:
+      COW: 0.2
