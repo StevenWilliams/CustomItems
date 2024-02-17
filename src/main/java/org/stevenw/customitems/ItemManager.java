@@ -109,6 +109,7 @@ public class ItemManager implements Listener {
 
     private static float getUnbreakingEnchantProbability(int level) {
         float probability = 1;
+        //why switch? and not probability = 1/(level + 1)
         switch (level) {
             case 0:
                 probability = 1F;
